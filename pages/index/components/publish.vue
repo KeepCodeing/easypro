@@ -14,18 +14,13 @@
       'hover:-translate-y-2',
       'transition-transform',
     ]"
-    :rightData="[
-      { title: '短视频平台', info: '易享卡新升级更多心意好礼' },
-      { title: '线上精品教学', info: '易享卡新升级更多心意好礼' },
-      { title: '线下课程优选', info: '易享卡新升级更多心意好礼' },
-      { title: '优秀教师解答', info: '易享卡新升级更多心意好礼' },
-    ]"
+    :rightData="data.tabs"
   >
     <template #left>
       <div class="h-full w-full flex flex-col justify-center">
-        <h3 class="sm:text-5xl text-3xl">易编程优选</h3>
+        <h3 class="sm:text-5xl text-3xl">{{ data.title }}</h3>
         <p class="text-lg font-thin text-gray-500 pt-8">
-          在各大平台上为中国教育贡献力量
+          {{ data.info }}
         </p>
       </div>
     </template>
@@ -51,12 +46,15 @@
           <img
             style="height: 100px"
             class="-mt-4"
-            src="/img/card1.png"
+            :src="scoped.item.img"
             alt=""
           />
         </div>
         <h3 class="mb-3">{{ scoped.item.title }}</h3>
         <span>{{ scoped.item.info }}</span>
+        <p class="text-lg font-thin pt-2 text-yellow-500">
+          <a href="#">了解更多 ›</a>
+        </p>
       </div>
     </template>
   </content-grid>
@@ -67,6 +65,12 @@ import { defineComponent } from "vue";
 import ContentGrid from "./content-grid.vue";
 
 export default defineComponent({
+  props: {
+    data: {
+      type: Object,
+      required: true,
+    },
+  },
   components: {
     ContentGrid,
   },

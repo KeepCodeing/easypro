@@ -11,20 +11,16 @@
       'py-14',
       'px-6',
     ]"
-    :rightData="[
-      { title: '40+', info: '客户' },
-      { title: '540+', info: '项目' },
-      { title: '300', info: '成员' },
-      { title: '25+', info: '奖项' },
-    ]"
+    :rightData="data.info"
     gridColor="bg-gray-100"
   >
     <template #left>
       <div class="h-full w-full font-semibold flex flex-col justify-center">
         <h3 class="sm:text-5xl text-4xl">
-          Our <span class="text-yellow-400">18 Years</span>
+          {{ data.up_title }}
+          <span class="text-yellow-400">{{ data.mid_title }}</span>
           <p class="py-2"></p>
-          Of Achievements
+          {{ data.down_title }}
         </h3>
       </div>
     </template>
@@ -40,7 +36,7 @@
           break-all
           text-lg text-center text-gray-500
         "
-        >{{ scoped.item.info }}</span
+        >{{ scoped.item.subtitle }}</span
       >
     </template>
   </content-grid>
@@ -51,6 +47,12 @@ import { defineComponent } from "vue";
 import ContentGrid from "./content-grid.vue";
 
 export default defineComponent({
+  props: {
+    data: {
+      type: Object,
+      required: true,
+    },
+  },
   components: {
     ContentGrid,
   },

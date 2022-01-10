@@ -2,9 +2,9 @@
   <div>
     <NuxtLayout name="main-layout">
       <template #content>
-        <Club />
-        <Achievement class="overflow-hidden" />
-        <Publish />
+        <Club :data="data?.club" />
+        <Achievement :data="data?.achievement" class="overflow-hidden" />
+        <Publish :data="data?.publish" />
       </template>
     </NuxtLayout>
   </div>
@@ -15,12 +15,17 @@ import { defineComponent } from "vue";
 import Club from "./components/club.vue";
 import Achievement from "./components/achievement.vue";
 import Publish from "./components/publish.vue";
+import jdata from "@/data/index.json";
 
 export default defineComponent({
   components: { Club, Achievement, Publish },
   layout: false,
   setup() {
-    return {};
+    const data = reactive(jdata);
+
+    return {
+      data,
+    };
   },
 });
 </script>

@@ -14,17 +14,13 @@
       'hover:-translate-y-2',
       'transition-transform',
     ]"
-    :rightData="[
-      '/img/首页顶部图片1.jpg',
-      '/img/首页顶部图片2.jpg',
-      '/img/首页顶部图片3.png',
-    ]"
+    :rightData="data.imgs"
   >
     <template #left>
       <div class="h-full w-full flex flex-col justify-center">
-        <h3 class="sm:text-5xl text-3xl">易享俱乐部</h3>
+        <h3 class="sm:text-5xl text-3xl">{{ data.title }}</h3>
         <p class="text-lg font-thin text-gray-500 pt-8">
-          开启您的易享之旅，易星越多、会员等级越高、好礼越丰富。
+          {{ data.info }}
         </p>
         <p
           class="
@@ -52,6 +48,12 @@ import { defineComponent } from "vue";
 import ContentGrid from "./content-grid.vue";
 
 export default defineComponent({
+  props: {
+    data: {
+      type: Object,
+      required: true,
+    },
+  },
   components: {
     ContentGrid,
   },

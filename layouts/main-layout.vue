@@ -142,15 +142,11 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
+import jdata from "@/data/main-layout.json";
 
 export default defineComponent({
   setup() {
-    let data: any = ref(null);
-    useFetch("data/main-layout.json").then((res) => {
-      data.value = res.data.value;
-      // console.log(data);
-    });
-    // const { data } = await useFetch<any>("data/main-layout.json");
+    let data: any = reactive(jdata);
 
     return {
       data,

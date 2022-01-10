@@ -1,0 +1,48 @@
+{
+  "club": {
+    "title": "易享俱乐部",
+    "info": "开启您的易享之旅，易星越多、会员等级越高、好礼越丰富。",
+    "imgs": [
+      "/img/首页顶部图片1.jpg",
+      "/img/首页顶部图片2.jpg",
+      "/img/首页顶部图片3.png"
+    ]
+  },
+  "achievement": {
+    "up_title": "Our ",
+    "mid_title": "18 Years",
+    "down_title": "Of Achievements",
+    "info": [
+      { "title": "40+", "subtitle": "客户" },
+      { "title": "540+", "subtitle": "项目" },
+      { "title": "300+", "subtitle": "成员" },
+      { "title": "25+", "subtitle": "奖项" }
+    ]
+  },
+  "publish": {
+    "title": "易编程优选",
+    "info": "在各大平台上为中国教育贡献力量",
+    "tabs": [
+      {
+        "title": "短视频平台",
+        "subtitle": "易享卡新升级更多心意好礼",
+        "img": "/img/card1.png"
+      },
+      {
+        "title": "线上精品教学",
+        "subtitle": "易享卡新升级更多心意好礼",
+        "img": "/img/card2.png"
+      },
+      {
+        "title": "线下课程优选",
+        "subtitle": "易享卡新升级更多心意好礼",
+        "img": "/img/card3.png"
+      },
+      {
+        "title": "优秀教师解答",
+        "subtitle": "易享卡新升级更多心意好礼",
+        "img": "/img/card4.png"
+      }
+    ]
+  }
+}
