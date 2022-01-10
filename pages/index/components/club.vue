@@ -42,7 +42,7 @@
       </div>
     </template>
     <template #right="scoped">
-      <img :src="scoped.item" class="h-full w-full" />
+      <img :src="scoped.item" class="h-full w-full shadow-md" />
     </template>
   </content-grid>
 </template>

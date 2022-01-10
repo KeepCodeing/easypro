@@ -1,26 +1,27 @@
 <template>
   <content-grid
     :leftStyle="['text-center', 'col-span-12', 'row-span-2', 'md:col-span-6']"
-    :rightStyle="['md:col-span-3', 'col-span-12', 'row-span-1']"
+    :rightStyle="['md:col-span-3', 'col-span-6', 'row-span-1']"
     :gridStyle="[
       'grid',
-      'gap-4',
+      'gap-8',
       'grid-rows-2',
       'grid-cols-12',
-      'py-16',
+      'lg:py-16',
+      'py-14',
       'px-6',
     ]"
     :rightData="[
-      { title: '40+', info: 'Happy Clients' },
-      { title: '540+', info: 'Projects Compoleted' },
-      { title: '300', info: 'Dedicated Members' },
-      { title: '25+', info: 'Awards Won' },
+      { title: '40+', info: '客户' },
+      { title: '540+', info: '项目' },
+      { title: '300', info: '成员' },
+      { title: '25+', info: '奖项' },
     ]"
     gridColor="bg-gray-100"
   >
     <template #left>
       <div class="h-full w-full font-semibold flex flex-col justify-center">
-        <h3 class="sm:text-5xl text-2xl">
+        <h3 class="sm:text-5xl text-4xl">
           Our <span class="text-yellow-400">18 Years</span>
           <p class="py-2"></p>
           Of Achievements
@@ -30,10 +31,17 @@
     <template #right="scoped">
       <div class="info">
         <h3 class="font-bold text-3xl">{{ scoped.item.title }}</h3>
-        <span class="font-medium text-lg text-gray-500">{{
-          scoped.item.info
-        }}</span>
       </div>
+      <span
+        class="
+          font-medium
+          pl-5
+          whitespace-nowrap
+          break-all
+          text-lg text-center text-gray-500
+        "
+        >{{ scoped.item.info }}</span
+      >
     </template>
   </content-grid>
 </template>
@@ -55,19 +63,15 @@ export default defineComponent({
 <style scoped>
 .info {
   position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 .info::before {
   content: " ";
   border: 2px solid rgb(202 138 4);
   background: rgb(202 138 4);
-  position: absolute;
   height: 60px;
-  left: -20px;
+  margin-right: 20px;
 }
-/* :rightData="[
-      { title: '短视频平台', info: '易享卡新升级更多心意好礼' },
-      { title: '短视频平台', info: '易享卡新升级更多心意好礼' },
-      { title: '短视频平台', info: '易享卡新升级更多心意好礼' },
-      { title: '短视频平台', info: '易享卡新升级更多心意好礼' },
-    ]" */
 </style>
