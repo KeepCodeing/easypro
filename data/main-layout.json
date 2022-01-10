@@ -1,0 +1,17 @@
+{
+  "imgs": {
+    "logo": "/img/logo-讲堂.png",
+    "hero": "/img/main.jpg",
+    "hero_small": "/img/main-small.jpg"
+  },
+  "tabs": [
+    { "title": "首页", "link": "" },
+    { "title": "课程介绍", "link": "" },
+    { "title": "关于", "link": "" },
+    { "title": "课程", "link": "" },
+    { "title": "易礼卡", "link": "", "hidden": true },
+    { "title": "我的账号", "link": "", "hidden": true },
+    { "title": "扶贫计划", "link": "", "hidden": true },
+    { "title": "下载APP", "link": "", "hidden": true }
+  ]
+}
