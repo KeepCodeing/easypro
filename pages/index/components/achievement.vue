@@ -7,7 +7,7 @@
       'gap-4',
       'grid-rows-2',
       'grid-cols-12',
-      'py-8',
+      'py-16',
       'px-6',
     ]"
     :rightData="[
