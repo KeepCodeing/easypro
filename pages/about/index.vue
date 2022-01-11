@@ -23,6 +23,9 @@
         <div class="px-5">
           <Feature :data="data.featute" />
         </div>
+        <div class="px-5 md:px-20 lg:px-30">
+          <Intro :data="data.intro" />
+        </div>
       </template>
     </NuxtLayout>
   </div>
@@ -33,12 +36,14 @@ import { defineComponent } from "vue";
 import jdata from "@/data/about.json";
 import Mission from "./components/mission.vue";
 import Feature from "./components/feature.vue";
+import Intro from "./components/intro.vue";
 
 export default defineComponent({
   layout: false,
   components: {
     Mission,
     Feature,
+    Intro,
   },
   setup() {
     const data = reactive(jdata);
