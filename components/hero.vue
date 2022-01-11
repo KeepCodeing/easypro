@@ -36,6 +36,7 @@
         </button>
       </span>
     </div>
+    <slot name="extern"></slot>
   </div>
 </template>
 
