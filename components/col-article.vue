@@ -1,10 +1,10 @@
 <template>
   <div>
-    <div :class="gridStyle?.split(' ')">
-      <div :class="leftStyle?.split(' ')">
+    <div :class="gridStyle">
+      <div :class="leftStyle">
         <slot name="left" :item="data"> </slot>
       </div>
-      <div :class="rightStyle?.split(' ')">
+      <div :class="rightStyle">
         <slot name="right" :item="data"></slot>
       </div>
     </div>
