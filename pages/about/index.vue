@@ -16,18 +16,33 @@
           </h3>
         </div>
       </template>
-      <template #content> </template>
+      <template #content>
+        <div class="px-5 md:px-20 xl:px-40">
+          <Mission :data="data.mission" />
+        </div>
+        <div class="px-5">
+          <Feature :data="data.featute" />
+        </div>
+      </template>
     </NuxtLayout>
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
+import jdata from "@/data/about.json";
+import Mission from "./components/mission.vue";
+import Feature from "./components/feature.vue";
 
 export default defineComponent({
   layout: false,
+  components: {
+    Mission,
+    Feature,
+  },
   setup() {
-    return {};
+    const data = reactive(jdata);
+    return { data };
   },
 });
 </script>

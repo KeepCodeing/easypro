@@ -25,12 +25,6 @@ export default defineComponent({
       type: String,
       required: false,
       default: "grid grid-cols-12 gap-8",
-      // default: () => ({
-      //   grid: ,
-      //   left: "",
-      //   right: "",
-      //   showLine: true,
-      // }),
     },
     leftStyle: {
       type: String,
