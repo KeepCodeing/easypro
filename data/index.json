@@ -45,6 +45,10 @@
       }
     ]
   },
+  "imgs": {
+    "hero": "/img/main.jpg",
+    "hero_small": "/img/main-small.jpg"
+  },
   "swiper": {
     "data": [
       {

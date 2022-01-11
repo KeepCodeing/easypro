@@ -1,6 +1,14 @@
 <template>
   <div>
     <NuxtLayout name="main-layout">
+      <template #hero
+        ><Hero
+          :data="{
+            hero: data.imgs.hero,
+            hero_small: data.imgs.hero_small,
+            showBtn: true,
+          }"
+      /></template>
       <template #content>
         <Club :data="data?.club" />
         <Achievement :data="data?.achievement" class="overflow-hidden" />

@@ -1,9 +1,5 @@
 {
-  "imgs": {
-    "logo": "/img/logo-讲堂.png",
-    "hero": "/img/main.jpg",
-    "hero_small": "/img/main-small.jpg"
-  },
+  "imgs": { "logo": "/img/logo-讲堂.png" },
   "tabs": [
     { "title": "首页", "link": "" },
     { "title": "课程介绍", "link": "" },
