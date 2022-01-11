@@ -36,7 +36,7 @@
       </template>
       <template #content
         ><div
-          class="flex flex-col items-center justify-center px-5 bg-white  lg:px-40"
+          class="flex flex-col items-center justify-center px-10 bg-white  xl:px-40"
         >
           <h3 class="mt-5 text-base tab-title">
             <a href="#" v-for="item in data.article.tab" :key="item">{{
@@ -79,7 +79,7 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import colArticle from "./components/col-article.vue";
+import colArticle from "../../components/col-article.vue";
 import rowArticle from "./components/row-article.vue";
 import jdata from "@/data/course.json";
 
