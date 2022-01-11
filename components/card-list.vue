@@ -1,7 +1,7 @@
 <template>
   <div :class="gridStyle">
-    <div :class="colStyle">
-      <slot name="content"></slot>
+    <div :class="colStyle" v-for="item in data" :key="item">
+      <slot name="content" :item="item"></slot>
     </div>
   </div>
 </template>
@@ -19,7 +19,11 @@ export default defineComponent({
     colStyle: {
       type: String,
       required: false,
-      default: "col-span-12 shadow-md md:col-span-3 sm:col-span-6",
+      default: "col-span-12 shadow-md lg:col-span-3 sm:col-span-6",
+    },
+    data: {
+      type: Array,
+      required: true,
     },
   },
   setup() {

@@ -23,7 +23,7 @@
         <div class="px-5">
           <Feature :data="data.featute" />
         </div>
-        <div class="px-5 md:px-20 lg:px-30">
+        <div class="px-5">
           <Intro :data="data.intro" />
         </div>
       </template>
