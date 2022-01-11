@@ -1,9 +1,9 @@
 <template>
   <div :class="[...gridStyle, gridColor]">
-    <div :class="[...leftStyle]">
+    <div :class="leftStyle">
       <slot name="left"></slot>
     </div>
-    <div :class="[...rightStyle]" v-for="item in rightData" :key="item">
+    <div :class="rightStyle" v-for="item in rightData" :key="item">
       <slot name="right" :item="item"></slot>
     </div>
   </div>
