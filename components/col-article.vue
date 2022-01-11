@@ -1,14 +1,14 @@
 <template>
   <div>
-    <div :class="gridStyle?.grid.split(' ')">
-      <div :class="gridStyle?.left.split(' ')">
+    <div :class="gridStyle?.split(' ')">
+      <div :class="leftStyle?.split(' ')">
         <slot name="left" :item="data"> </slot>
       </div>
-      <div :class="gridStyle?.right.split(' ')">
+      <div :class="rightStyle?.split(' ')">
         <slot name="right" :item="data"></slot>
       </div>
     </div>
-    <hr v-if="gridStyle?.showLine" class="mt-5 bg-gray-300" />
+    <hr v-if="showLine" class="mt-5 bg-gray-300" />
   </div>
 </template>
 
@@ -22,14 +22,30 @@ export default defineComponent({
       required: true,
     },
     gridStyle: {
-      type: Object,
+      type: String,
       required: false,
-      default: () => ({
-        grid: "grid grid-cols-12 gap-8",
-        left: "xl:col-start-2 xl:col-span-5 col-span-6 col-start-1",
-        right: "md:col-start-7 xl:col-span-5 md:col-span-6",
-        showLine: true,
-      }),
+      default: "grid grid-cols-12 gap-8",
+      // default: () => ({
+      //   grid: ,
+      //   left: "",
+      //   right: "",
+      //   showLine: true,
+      // }),
+    },
+    leftStyle: {
+      type: String,
+      required: false,
+      default: "xl:col-start-2 xl:col-span-5 col-span-6 col-start-1",
+    },
+    rightStyle: {
+      type: String,
+      required: false,
+      default: "md:col-start-7 xl:col-span-5 md:col-span-6",
+    },
+    showLine: {
+      type: Boolean,
+      required: false,
+      default: true,
     },
   },
   setup() {
