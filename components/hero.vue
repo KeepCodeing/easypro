@@ -1,36 +1,22 @@
 <template>
   <div class="relative overflow-hidden bg-black">
-    <img :src="data?.hero" class="hidden w-full sm:block" style="" alt="" />
+    <img
+      :src="data?.hero"
+      class="hidden w-full sm:block"
+      :style="imgStyle.large"
+      alt=""
+    />
     <img
       :src="data?.hero_small"
       class="block w-full sm:hidden"
-      style=""
+      :style="imgStyle.small"
       alt=""
     />
     <div v-if="data.showBtn" class="absolute" style="left: 7%; bottom: 7%">
       <span class="ml-3">
         <button
           type="button"
-          class="
-            inline-flex
-            items-center
-            px-2
-            py-2
-            text-sm
-            font-bold
-            text-white
-            bg-orange-500
-            rounded-md
-            shadow-sm
-            lg:px-8 lg:py-3
-            md:px-5 md:py-2
-            sm:px-2 sm:py-2
-            hover:bg-orange-400
-            focus:outline-none
-            focus:ring-2
-            focus:ring-offset-2
-            focus:ring-indigo-500
-          "
+          class="inline-flex items-center px-2 py-2 text-sm font-bold text-white bg-orange-500 rounded-md shadow-sm  lg:px-8 lg:py-3 md:px-5 md:py-2 sm:px-2 sm:py-2 hover:bg-orange-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
         >
           <!-- Heroicon name: solid/link -->
           <svg
@@ -61,6 +47,11 @@ export default defineComponent({
     data: {
       type: Object,
       required: true,
+    },
+    imgStyle: {
+      type: Object,
+      required: false,
+      default: () => ({ large: [], small: [] }),
     },
   },
   setup() {
