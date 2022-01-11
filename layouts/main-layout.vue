@@ -49,7 +49,8 @@
 
     <slot name="tabbar">
       <div
-        class="fixed bottom-0 flex items-center justify-between block w-full h-16 bg-white  sm:hidden px-14 bg-gray-50"
+        style="bottom: -2px"
+        class="fixed flex items-center justify-between block w-full h-16 bg-white  sm:hidden px-14 bg-gray-50"
       >
         <template v-for="item in data.tabs" :key="item">
           <div class="text-center" v-if="item.tab">

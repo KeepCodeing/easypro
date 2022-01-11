@@ -36,7 +36,7 @@
       </template>
       <template #content
         ><div
-          class="flex flex-col items-center justify-center px-5 bg-white  md:px-10"
+          class="flex flex-col items-center justify-center px-5 bg-white  lg:px-40"
         >
           <h3 class="mt-5 text-base tab-title">
             <a href="#" v-for="item in data.article.tab" :key="item">{{
@@ -69,6 +69,8 @@
               />
             </template>
           </col-article>
+          <row-article :data="data.article.list" class="block lg:hidden">
+          </row-article>
         </div>
       </template>
     </NuxtLayout>
@@ -78,10 +80,11 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 import colArticle from "./components/col-article.vue";
+import rowArticle from "./components/row-article.vue";
 import jdata from "@/data/course.json";
 
 export default defineComponent({
-  components: { colArticle },
+  components: { colArticle, rowArticle },
   layout: false,
   setup() {
     const whichSlot1 = (item) => (item % 2 === 0 ? "right" : "left");
