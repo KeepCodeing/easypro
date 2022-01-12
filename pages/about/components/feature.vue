@@ -1,5 +1,8 @@
 <template>
-  <div style="background-color: rgb(247, 246, 249)" class="p-10 my-10">
+  <div
+    style="background-color: rgb(247, 246, 249)"
+    class="px-0 py-10 my-10 sm:p-10"
+  >
     <div class="grid grid-cols-12 gap-8">
       <div class="col-span-12 mb-2 text-center sm:mb-5">
         <span

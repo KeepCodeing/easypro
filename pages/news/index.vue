@@ -16,16 +16,16 @@
         </div>
       </template>
       <template #content>
-        <div class="px-10 my-10 lg:my-20 lg:px-20 xl:px-40">
+        <div class="px-2 my-10 sm:px-10 lg:my-20 lg:px-20 xl:px-40">
           <Intro :data="data.intro"></Intro>
         </div>
         <div
-          class="px-10 lg:px-20 xl:px-40"
+          class="px-2 sm:px-10 lg:px-20 xl:px-40"
           style="background-color: rgb(247, 246, 249)"
         >
           <Mission :data="data.mission"></Mission>
         </div>
-        <div class="px-10 my-10 lg:my-20 lg:px-20">
+        <div class="px-2 my-10 sm:px-10 lg:my-20 lg:px-20">
           <News :data="data.news"></News>
         </div>
       </template>
