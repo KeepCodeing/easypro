@@ -4,7 +4,7 @@
       <template #content="scoped">
         <div
           class="h-full p-10 bg-white rounded-lg sm:p-5"
-          style="background-color: rgb(244, 242, 248)"
+          :style="{ backgroundColor: colorArr[idx++ % 3] }"
         >
           <div class="text-center md:mb-5 icon" style="margin-top: -35%">
             <img
@@ -39,7 +39,16 @@ export default defineComponent({
     },
   },
   setup() {
-    return {};
+    const colorArr = [
+      "rgb(243,241,247)",
+      "rgb(232,230,246)",
+      "rgb(238,229,233)",
+    ];
+    let idx = ref(0);
+    return {
+      colorArr,
+      idx,
+    };
   },
 });
 </script>
