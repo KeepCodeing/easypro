@@ -13,12 +13,12 @@
       </template>
       <template #[whichSlot1]="scoped">
         <h1
-          class="mt-5 font-serif text-xl font-extrabold text-black  lg:text-3xl sm:text-2xl"
+          class="px-5 mt-5 font-serif text-xl font-extrabold text-black  lg:text-3xl sm:text-2xl"
         >
           {{ scoped.item.title }}
         </h1>
         <h3
-          class="pr-5 mt-2 text-lg font-thin text-gray-600  lg:text-2xl sm:text-xl"
+          class="px-5 mt-2 text-lg font-thin text-gray-600  lg:text-2xl sm:text-xl"
         >
           {{ scoped.item.info }}
         </h3>
