@@ -80,11 +80,10 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 import colArticle from "../../components/col-article.vue";
-import rowArticle from "./components/row-article.vue";
 import jdata from "@/data/course.json";
 
 export default defineComponent({
-  components: { colArticle, rowArticle },
+  components: { colArticle },
   layout: false,
   setup() {
     const whichSlot1 = (item) => (item % 2 === 0 ? "right" : "left");

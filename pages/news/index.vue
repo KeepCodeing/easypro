@@ -25,6 +25,9 @@
         >
           <Mission :data="data.mission"></Mission>
         </div>
+        <div class="px-10 my-10 lg:my-20 lg:px-20 xl:px-40">
+          <News :data="data.intro"></News>
+        </div>
       </template>
     </NuxtLayout>
   </div>
@@ -35,9 +38,10 @@ import { defineComponent } from "vue";
 import jdata from "@/data/news.json";
 import Intro from "./components/intro.vue";
 import Mission from "./components/mission.vue";
+import News from "./components/news.vue";
 
 export default defineComponent({
-  components: { Intro, Mission },
+  components: { Intro, Mission, News },
   setup() {
     const data = reactive(jdata);
     return {
