@@ -1,7 +1,7 @@
 <template>
   <div :class="gridStyle">
-    <div :class="colStyle" v-for="item in data" :key="item">
-      <slot name="content" :item="item"></slot>
+    <div :class="colStyle" v-for="(item, idx) in data" :key="item">
+      <slot name="content" :item="item" :idx="idx"></slot>
     </div>
   </div>
 </template>

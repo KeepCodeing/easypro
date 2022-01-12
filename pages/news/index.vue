@@ -38,7 +38,7 @@ import { defineComponent } from "vue";
 import jdata from "@/data/news.json";
 import Intro from "./components/intro.vue";
 import Mission from "./components/mission.vue";
-import News from "./components/news.vue";
+import News from "./components/com-news.vue";
 
 export default defineComponent({
   components: { Intro, Mission, News },
