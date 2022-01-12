@@ -25,8 +25,8 @@
         >
           <Mission :data="data.mission"></Mission>
         </div>
-        <div class="px-10 my-10 lg:my-20 lg:px-20 xl:px-40">
-          <News :data="data.intro"></News>
+        <div class="px-10 my-10 lg:my-20 lg:px-20">
+          <News :data="data.news"></News>
         </div>
       </template>
     </NuxtLayout>
