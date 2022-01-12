@@ -19,6 +19,12 @@
         <div class="px-10 my-10 lg:my-20 lg:px-20 xl:px-40">
           <Intro :data="data.intro"></Intro>
         </div>
+        <div
+          class="px-10 lg:px-20 xl:px-40"
+          style="background-color: rgb(247, 246, 249)"
+        >
+          <Mission :data="data.mission"></Mission>
+        </div>
       </template>
     </NuxtLayout>
   </div>
@@ -28,9 +34,10 @@
 import { defineComponent } from "vue";
 import jdata from "@/data/news.json";
 import Intro from "./components/intro.vue";
+import Mission from "./components/mission.vue";
 
 export default defineComponent({
-  components: { Intro },
+  components: { Intro, Mission },
   setup() {
     const data = reactive(jdata);
     return {
