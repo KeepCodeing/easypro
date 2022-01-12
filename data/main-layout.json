@@ -1,13 +1,23 @@
 {
   "imgs": { "logo": "/img/logo-讲堂.png" },
   "tabs": [
-    { "title": "首页", "link": "" },
-    { "title": "课程介绍", "link": "" },
-    { "title": "关于", "link": "" },
-    { "title": "课程", "link": "" },
-    { "title": "易礼卡", "link": "", "hidden": true, "tab": true },
-    { "title": "我的账号", "link": "", "hidden": true, "tab": true },
-    { "title": "扶贫计划", "link": "", "hidden": true, "tab": true },
-    { "title": "下载APP", "link": "", "hidden": true, "tab": true }
+    { "title": "首页", "link": "/", "tab": true, "icon": "icon-home" },
+    {
+      "title": "课程介绍",
+      "link": "/course",
+      "tab": true,
+      "icon": "icon-display"
+    },
+    { "title": "关于我们", "link": "/about", "tab": true, "icon": "icon-link" },
+    {
+      "title": "官方动态",
+      "link": "/news",
+      "tab": true,
+      "icon": "icon-bullhorn"
+    },
+    { "title": "易礼卡", "link": "/card", "hidden": true },
+    { "title": "我的账号", "link": "/my", "hidden": true },
+    { "title": "扶贫计划", "link": "/plan", "hidden": true },
+    { "title": "下载APP", "link": "/app", "hidden": true }
   ]
 }
