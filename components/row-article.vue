@@ -4,25 +4,12 @@
       <img :src="item.img" style="width: 100%" />
       <div class="p-8">
         <h2
-          class="
-            text-2xl
-            font-bold
-            text-center text-gray-600
-            sm:text-3xl
-            md:text-4xl
-          "
+          class="text-2xl font-bold text-center text-gray-600  sm:text-3xl md:text-4xl"
         >
           {{ item.title }}
         </h2>
         <h4
-          class="
-            mt-5
-            text-base
-            font-thin
-            text-left text-gray-400
-            sm:text-lg
-            md:text-xl
-          "
+          class="mt-5 text-base font-thin text-left text-gray-400  sm:text-lg md:text-xl"
         >
           {{ item.info }}
         </h4>

@@ -10,7 +10,7 @@
             </h4>
           </div>
           <div
-            style="background-image: url('img/关于-中图2.png')"
+            :style="{ backgroundImage: `url(${data.hero.hero})` }"
             class="absolute w-full h-full bg-center bg-cover -z-10 hero"
           ></div>
         </div>

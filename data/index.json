@@ -3,9 +3,9 @@
     "title": "易享俱乐部",
     "info": "开启您的易享之旅，易星越多、会员等级越高、好礼越丰富。",
     "imgs": [
-      "/img/首页顶部图片1.jpg",
-      "/img/首页顶部图片2.jpg",
-      "/img/首页顶部图片3.png"
+      "/img/index-top1.jpg",
+      "/img/index-top2.jpg",
+      "/img/index-top3.png"
     ]
   },
   "achievement": {
@@ -54,22 +54,22 @@
       {
         "title": "开拓编程思维",
         "tag": "编程知识",
-        "img": "/img/首页底部图片1.jpg"
+        "img": "/img/index-bottom1.jpg"
       },
       {
         "title": "小学生阶段模块教学",
         "tag": "编程课程",
-        "img": "/img/首页底部图片3.jpeg"
+        "img": "/img/index-bottom3.jpeg"
       },
       {
         "title": "编程知识厨房",
         "tag": "编程知识",
-        "img": "/img/首页底部图片2.jpg"
+        "img": "/img/index-bottom2.jpg"
       },
       {
         "title": "大龄学生阶段模块教学",
         "tag": "编程课程",
-        "img": "/img/首页底部图片3.jpeg"
+        "img": "/img/index-bottom3.jpeg"
       }
     ]
   }

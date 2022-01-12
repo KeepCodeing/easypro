@@ -6,6 +6,7 @@
 
 <script setup>
 import "@/assets/css/tailwind.css";
+import "@/assets/css/icons/style.css";
 // export default {};
 </script>
 

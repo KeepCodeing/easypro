@@ -17,9 +17,9 @@
     :rightData="data.tabs"
   >
     <template #left>
-      <div class="h-full w-full flex flex-col justify-center">
-        <h3 class="sm:text-5xl text-3xl">{{ data.title }}</h3>
-        <p class="text-lg font-thin text-gray-500 pt-8">
+      <div class="flex flex-col justify-center w-full h-full">
+        <h3 class="text-3xl sm:text-5xl">{{ data.title }}</h3>
+        <p class="pt-8 text-lg font-thin text-gray-500">
           {{ data.info }}
         </p>
       </div>
@@ -27,32 +27,19 @@
     <template #right="scoped">
       <!-- style="padding: 20px 30px; margin: 0 35px" -->
       <div
-        class="
-          text-center
-          bg-white
-          shadow-md
-          xl:px-2 xl:mx-8
-          md:mx-20
-          lg:mx-28
-          sm:mx-10
-          px-0
-          mx-0
-          -top-8
-          py-10
-          pb-5
-        "
+        class="px-0 py-10 pb-5 mx-0 text-center bg-white shadow-md  xl:px-2 xl:mx-8 md:mx-20 lg:mx-28 sm:mx-10 -top-8"
       >
-        <div class="flex justify-center items-start relative -top-6">
+        <div class="relative flex items-start justify-center -top-6">
           <img
             style="height: 100px"
             class="-mt-4"
-            :src="scoped.item.img"
+            :src="encodeURI(scoped.item.img)"
             alt=""
           />
         </div>
         <h3 class="mb-3">{{ scoped.item.title }}</h3>
         <span>{{ scoped.item.info }}</span>
-        <p class="text-lg font-thin pt-2 text-yellow-500">
+        <p class="pt-2 text-lg font-thin text-yellow-500">
           <a href="#">了解更多 ›</a>
         </p>
       </div>

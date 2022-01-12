@@ -1,5 +1,5 @@
 {
-  "imgs": { "logo": "/img/logo-讲堂.png" },
+  "imgs": { "logo": "/img/logo.png" },
   "tabs": [
     { "title": "首页", "link": "/", "tab": true, "icon": "icon-home" },
     {

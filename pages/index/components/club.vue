@@ -17,28 +17,20 @@
     :rightData="data.imgs"
   >
     <template #left>
-      <div class="h-full w-full flex flex-col justify-center">
-        <h3 class="sm:text-5xl text-3xl">{{ data.title }}</h3>
-        <p class="text-lg font-thin text-gray-500 pt-8">
+      <div class="flex flex-col justify-center w-full h-full">
+        <h3 class="text-3xl sm:text-5xl">{{ data.title }}</h3>
+        <p class="pt-8 text-lg font-thin text-gray-500">
           {{ data.info }}
         </p>
         <p
-          class="
-            text-lg
-            font-thin
-            xl:pt-12
-            sm:pt-3
-            md:pt-3
-            pt-2
-            text-yellow-500
-          "
+          class="pt-2 text-lg font-thin text-yellow-500  xl:pt-12 sm:pt-3 md:pt-3"
         >
           <a href="#">了解更多 ›</a>
         </p>
       </div>
     </template>
     <template #right="scoped">
-      <img :src="scoped.item" class="h-full w-full shadow-md" />
+      <img :src="encodeURI(scoped.item)" class="w-full h-full shadow-md" />
     </template>
   </content-grid>
 </template>

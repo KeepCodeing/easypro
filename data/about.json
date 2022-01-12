@@ -8,9 +8,9 @@
   "featute": {
     "title": "多样运营模式",
     "tabs": [
-      { "title": "多方位的在线教育", "img": "img/关于-小圆图1.png" },
-      { "title": "线下优质课程", "img": "img/关于-小圆图2.png" },
-      { "title": "面向大赛的实质化提升", "img": "img/关于-小圆图3.png" }
+      { "title": "多方位的在线教育", "img": "img/about-feature1.png" },
+      { "title": "线下优质课程", "img": "img/about-feature2.png" },
+      { "title": "面向大赛的实质化提升", "img": "img/about-feature3.png" }
     ]
   },
   "intro": {

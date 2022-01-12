@@ -3,7 +3,7 @@
     <slot name="header">
       <template class="hidden sm:block">
         <header
-          class="items-center justify-around block w-full h-16 bg-white sm:flex md:flex"
+          class="items-center justify-around block w-full h-16 bg-white  sm:flex md:flex"
         >
           <div class="hidden lg:hidden xl:block">
             <h2>
@@ -31,7 +31,7 @@
             <span class="sm:ml-3">
               <button
                 type="button"
-                class="inline-flex items-center px-6 py-2 text-sm font-medium text-white bg-gray-800 border border-transparent rounded-md shadow-sm hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                class="inline-flex items-center px-6 py-2 text-sm font-medium text-white bg-gray-800 border border-transparent rounded-md shadow-sm  hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
               >
                 登陆
               </button>
@@ -45,7 +45,7 @@
 
     <slot name="footer">
       <footer
-        class="flex items-center justify-between h-16 font-light text-gray-300 bg-gray-800 sm:px-10"
+        class="flex items-center justify-between h-16 font-light text-gray-300 bg-gray-800  sm:px-10"
       >
         <div><NuxtLink to="/">易编程官网</NuxtLink></div>
         <div><a href="#">隐私政策</a><a href="#">条款和条件</a></div>
@@ -55,7 +55,7 @@
     <slot name="tabbar">
       <div
         style="bottom: -2px"
-        class="fixed flex items-center justify-between block w-full h-16 bg-white sm:hidden px-14 bg-gray-50"
+        class="fixed flex items-center justify-between block w-full h-16 bg-white  sm:hidden px-14 bg-gray-50"
       >
         <template v-for="item in data.tabs" :key="item">
           <div class="text-center" v-if="item.tab">
@@ -100,7 +100,6 @@ export default defineComponent({
 </script>
 
 <style scoped>
-@import url("/assets/css/fonts.css");
 footer a {
   @apply mx-2;
 }
