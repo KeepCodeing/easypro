@@ -20,10 +20,10 @@
         <div class="px-5 md:px-20 xl:px-40">
           <Mission :data="data.mission" />
         </div>
-        <div class="px-5">
+        <div>
           <Feature :data="data.featute" />
         </div>
-        <div class="px-5">
+        <div>
           <Intro :data="data.intro" />
         </div>
       </template>

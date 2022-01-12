@@ -1,5 +1,5 @@
 <template>
-  <div class="my-10">
+  <div class="mt-10">
     <col-article
       :data="data.core"
       rightStyle="col-span-12 self-center sm:col-span-6 pt-5 lg:col-span-8 xl:col-span-7"
@@ -17,7 +17,9 @@
         >
           {{ scoped.item.title }}
         </h1>
-        <h3 class="mt-2 text-lg font-thin text-gray-600 lg:text-2xl sm:text-xl">
+        <h3
+          class="pr-5 mt-2 text-lg font-thin text-gray-600  lg:text-2xl sm:text-xl"
+        >
           {{ scoped.item.info }}
         </h3>
       </template>
@@ -26,7 +28,7 @@
       :data="data.com_intro"
       colStyle="col-span-12 rounded-2xl shadow-md xl:col-span-3 sm:col-span-6 bg-white py-8 px-10"
       style="background-color: rgb(247, 246, 249)"
-      class="p-5 my-10 lg:p-10 rounded-2xl"
+      class="p-5 mt-10 lg:p-10"
     >
       <template #content="scoped">
         <div class="content">
